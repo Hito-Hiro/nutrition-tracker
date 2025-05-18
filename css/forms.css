@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+    margin: auto;
+    margin-top: 11%;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 2px 5px 15px gray;
+    font-family: "Quicksand", sans-serif;
+}
+#form{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.btn-formulario{
+    padding: 12px;
+    margin-top: 10px;
+    width: 100%;
+    font-family: "Konkhmer Sleokchher", sans-serif;
+    background-color: rgb(137, 219, 70);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+.btn-formulario:hover{
+    transform: scale(1.03);
+    transition: transform 0.5s;
+}
+.formulario h1{
+    font-family: "Konkhmer Sleokchher", sans-serif;
+    margin-bottom: 5px;
+}
+.formulario label{
+    font-weight: 300;
+    width: 100%;
+}
+.formulario a{
+    color: rgb(96, 245, 4);
+    font-weight: 600;
+}
+.formulario a:hover{
+    color: black;
+}
+.formulario input{
+    padding: 7px;
+    border: solid 2px white;
+    margin-bottom: 20px;
+    border-bottom-color: rgb(136, 241, 45);
+    font-family: "Quicksand", sans-serif;
+    width: 100%;
+}
+.formulario input:hover{
+    transform: scale(1.03);
+    background-color:rgb(250, 250, 250);
+    transition: background-color 0.5s;
+}
