@@ -52,7 +52,7 @@
     width: 100%;
 }
 .formulario a{
-    color: rgb(96, 245, 4);
+    color: rgb(137, 219, 70);
     font-weight: 600;
 }
 .formulario a:hover{
@@ -62,7 +62,7 @@
     padding: 7px;
     border: solid 2px white;
     margin-bottom: 20px;
-    border-bottom-color: rgb(136, 241, 45);
+    border-bottom-color: rgb(137, 219, 70);
     font-family: "Quicksand", sans-serif;
     width: 100%;
 }
