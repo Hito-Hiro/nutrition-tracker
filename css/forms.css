@@ -23,6 +23,12 @@
         width: 80%;
     }
 }
+@media (min-width:780px) {
+    .formulario{
+        width: 60%;
+    }
+    
+}
 #form{
     opacity: 0;
     transform: translateY(20px);

@@ -210,7 +210,7 @@ h1,h2{
 @media (max-width: 768px) {
     h1, h2 {
         padding: 15px;
-        font-size: 22px;
+        font-size: 40px;
         text-align: center;
     }
 
@@ -222,6 +222,7 @@ h1,h2{
 
     .registros label {
         margin-bottom: 5px;
+        font-size: 30px;
     }
 
     .registros input, textarea {
@@ -260,7 +261,7 @@ h1,h2{
     }
 
     h1, h2 {
-        font-size: 18px;
+        font-size: 70px;
     }
 
     .tarjeta-texto {
