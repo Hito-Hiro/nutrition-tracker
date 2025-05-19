@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/forms.css">
     <title>Registrate</title>
 </head>
-    <?php
+<?php
 
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
@@ -25,9 +25,7 @@
         $usuarios = file_exists($usujson) ? json_decode(file_get_contents($usujson), true): [];
 
         if(isset($usuarios[$usuario])){
-
-            echo '<script> alert("Este usuario ya se encuentra registrado");</script>';
-
+            $error = "Este usuario ya se encuentra registrado";
         }else{
             $usuarios[$usuario] = password_hash($contraseña, PASSWORD_DEFAULT);
             file_put_contents($usujson, json_encode($usuarios));
@@ -37,9 +35,11 @@
             exit;
         }
     }
-    
-    ?>
+?>
 <body>
+    <?php if (isset($error)): ?>
+        <script>alert("<?php echo $error; ?>");</script>
+    <?php endif; ?>
     <form class="formulario" id="form" method="post">
 
         <h1>Registro</h1>
