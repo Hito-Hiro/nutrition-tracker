@@ -16,7 +16,12 @@
         $usuario = $_POST['usuario'] ?? '';
         $contraseña = $_POST['contraseña'] ?? '';
 
-        $usujson = '/tmp/data/users.json';
+        $folder = '/tmp/data';
+            if (!file_exists($folder)) {
+            mkdir($folder, 0777, true);
+        }
+
+        $usujson = $folder . '/users.json';
         $usuarios = file_exists($usujson) ? json_decode(file_get_contents($usujson), true): [];
 
         if(isset($usuarios[$usuario])){

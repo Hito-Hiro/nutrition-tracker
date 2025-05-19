@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <button type="submit" id="guardar"><?php echo $editar ? 'Actualizar' : 'Guardar'; ?></button>
     <?php if ($editar): ?>
-        <br><button href="index.php" id="cancelar">Cancelar</button>
+        <br><button type="button" onclick="window.location='index.php';" id="cancelar">Cancelar</button>
     <?php endif; ?>
 </form>
 
