@@ -1,15 +1,5 @@
 <?php
     session_start();
-?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/forms.css">
-    <title>Registrate</title>
-</head>
-<?php
 
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
@@ -36,6 +26,14 @@
         }
     }
 ?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/forms.css">
+    <title>Registrate</title>
+</head>
 <body>
     <?php if (isset($error)): ?>
         <script>alert("<?php echo $error; ?>");</script>
