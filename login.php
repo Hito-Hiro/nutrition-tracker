@@ -1,16 +1,5 @@
 <?php
     session_start();
-?>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/forms.css">
-    <title>Iniciar sesión</title>
-</head>
-    <?php
     
     if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 
@@ -34,8 +23,16 @@
             exit;
         }
     }
-    ?>
-<body>
+?>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/forms.css">
+        <title>Iniciar sesión</title>
+    </head>
+    <body>
     <form class="formulario" id="form" method="post">
 
         <h1>Iniciar sesion</h1>
