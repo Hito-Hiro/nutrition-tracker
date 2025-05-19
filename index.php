@@ -8,7 +8,7 @@ if (!isset($_SESSION['usuario'])) {
 }
 
 $usuario = $_SESSION['usuario'];
-$archivo_json = "data/{$usuario}.json";
+$archivo_json = "/tmp/data/{$usuario}.json";
 $datos = file_exists($archivo_json) ? json_decode(file_get_contents($archivo_json), true) : [];
 
 // Eliminar

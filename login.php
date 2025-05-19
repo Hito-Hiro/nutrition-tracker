@@ -17,7 +17,7 @@
         $usuario = $_POST['usuario'] ?? '';
         $contraseña = $_POST['contraseña'] ?? '';
 
-        $usujson = 'data/users.json';
+        $usujson = '/tmp/data/users.json';
         $usuarios = file_exists($usujson) ? json_decode(file_get_contents($usujson), true): [];
 
         if(!isset($usuarios[$usuario])){
