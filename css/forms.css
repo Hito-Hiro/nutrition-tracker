@@ -18,6 +18,11 @@
     box-shadow: 2px 5px 15px gray;
     font-family: "Quicksand", sans-serif;
 }
+@media (max-width:768px) {
+    .formulario{
+        width: 80%;
+    }
+}
 #form{
     opacity: 0;
     transform: translateY(20px);
@@ -65,4 +70,18 @@
     transform: scale(1.03);
     background-color:rgb(250, 250, 250);
     transition: background-color 0.5s;
+}
+@media (max-width: 480px) {
+    .formulario {
+        padding: 20px;
+        margin-top: 25%;
+    }
+
+    .formulario h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn-formulario {
+        font-size: 1rem;
+    }
 }
